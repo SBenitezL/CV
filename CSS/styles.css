@@ -1,43 +1,55 @@
-*{
-    padding: 0px;
-    margin-left: 0%;
-    margin-top: 0%;
+.contenido{
+    margin: 0%!important;
+    padding: 0%!important;
 }
-header{
-    background-color: rgb(16, 152, 173);
-}
-header h1{
-    display: inline-block;
-}
-header h2{
-    display: inline-block;
-}
-header img{
-    display: inline;
-    width: 150px;
-    height: 150px;
-}
-nav{
-    background-color: rgb(16, 129, 147)
-}
-nav ul{
-    display: inline-block;
-}
-nav li{
-    display: inline;
-    margin-right: 10px;
-}
-main{
-    margin: 0%;
-    padding: 0%;
-}
-.InformacionPersonal{
-    background-color:antiquewhite;
-    display: inline-block;
-    width: 100%;
-}
-.InformacionPersonal div{
-    display: inline-block;
+.Separaciones{
+    padding-left: 20px;
+    padding-top: 10px;
     margin-right: 5%;
+    margin-bottom: 30px;
+}
+.navegar{
+    padding-top: 10px;
+}
+.btn{
+    margin-top: 20px;
+    border-color: darkkhaki;
+    color:thistle;
+}
+.datos-item{
+    list-style-type: none;
+}
+.Titulo{
+    color:darkgoldenrod;
+    margin-right: 20px;
+}
+
+.nav-link
+{
+    color:darkgray;
+    padding-bottom: 0%;
+    padding-right: 0%;
+}
+.nav-link:hover{
+    color: darkcyan;
+}
+
+.perfil{
+    border-radius:80px;
+    margin-left: 20px;
+}
+footer{
+    background-color:darkgray;
+}
+.input-group{
+    margin-top: 20px;
     padding: 0%;
+}
+
+.input-group-text{
+    color:thistle;
+    border-color: darkkhaki;
+}
+.form-control{
+    border-color: darkkhaki;
 }

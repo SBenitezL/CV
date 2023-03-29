@@ -1,60 +1,142 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="../CSS/styles.css">
     <title>Hoja de Vida</title>
 </head>
 <body>
-    <header>
-        <img src="../SRC/Foto_Perfil.jpg" alt="Foto_Perfil">
-        <h1>Hoja de Vida</h1>  
-        <nav>
-            <ul>
-                <li><a href="">Datos Personales</a></li>
-                <li><a href="">Perfil</a></li>
-                <li><a href="">Formación</a></li>
-                <li><a href="">Experiencia</a></li>
-                <li><a href="">Competencias</a></li>
-                <li><a href="">Idiomas</a></li>
-                <li><a href="">Pasa Tiempos</a></li>
+   <header class="d-wrap bg-dark align-items-center d-flex">
+    
+    <img class=" justify-content-center perfil" src="../SRC/Foto_Perfil.jpeg" alt="Foto_Perfil" width="100" height="100">
+    <h1 class="col-md-10 justify-content-center aling-items-center Titulo d-flex">Hoja de Vida</h1>
+   </header>
+   <div class="d-flex contenido">
+   <nav class="col-md-2 d-flex bg-dark navegar">
+        <ul class="nav flex-column ">
+            <li class="nav-item ">
+                <a class="nav-link" href="#DatosPersonales" target="_self">Datos Personales <hr class="distancia"></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#Formación">Formación <hr class="distancia"></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#Experiencia">Experiencia <hr class="distancia"></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#Referencias">Referencias <hr class="distancia"></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#Contacto">Contacto <hr class="distancia"></a>
+            </li>
+        </ul>
+   </nav>
+    <main class ="col-md-10 bg-secondary">
+        <section id ="DatosPersonales" class="Separaciones">
+            <header class="Titulo">
+                <h2 class="titulo-seccion">Datos Personales</h2>
+                <hr>
+            </header>
+            <ul class="datos">
+                <li class="datos-item"><strong>Nombre: </strong> Santiago</li>
+                <li class="datos-item"><strong>Apellidos: </strong> Benitez López</li>
+                <li class="datos-item"><strong>Email: </strong> sbenitez1607@gmail.com</li>
+                <li class="datos-item"><strong>Teléfono: </strong> (+57) 302 404 0826</li>
+                <li class="datos-item"><strong>Dirección: </strong> Calle 5B #18-67</li>
+                <li class="datos-item"><strong>Genero: </strong> Masculino</li>
+                <li class="datos-item"><strong>Nacionalidad: </strong> Colombiano</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        
-        <section class="InformacionPersonal">
-            <h2>Datos Personales</h2>
-            <div>
-                <h3 class="Titulo">Nombre</h3>
-                <p class="Informacion">Santiago</p>
-            </div>
-            <div>
-                <h3 class="Titulo">Apellidos</h3>
-                <p class="Informacion">Benitez López</p>
-            </div>
-            <div>
-                <h3 class="Titulo">Correo Electrónico</h3>
-                <p class="Informacion">sbenitez1607@gmail.com</p>
-            </div>
-            <div>
-                <h3 class="Titulo">Teléfono</h3>
-                <p class="Informacion">(+57) 302 404 0826</p>
-            </div>
-            <div>
-                <h3 class="Titulo">Género</h3>
-                <p class="Informacion">Masculino</p>
-            </div>
-            <div>
-                <h3 class="Titulo">Estado civil</h3>
-                <p class="Informacion">Soltero</p>
-            </div>
         </section>
-        <section class="Perfi">
+        <section id="Formación" class="Separaciones">
+            <header class="Titulo">
+                <h2 class="titulo-seccion">Formación</h2>
+                <hr>
+            </header>
+            <ul class="datos">
+                <li class="datos-item"><strong>Estudiante: </strong> 7mo Semestre - Ingeniería de Sistemas - Universidad del Cauca - [Cursando]</li>
+                <li class="datos-item"><strong>Cursos: </strong> 
+                    <ul>
+                        <li class="datos-item"> - Python - Kaggle - [12/09/2021]</li>
+                        <li class="datos-item">  - Intro to Machine Learning - Kaggle - [09/09/2021]</li>
+                    </ul> 
+                </li>
+                <li class="datos-item"><strong>Bachiller: </strong> Real Colegio San Francisco de Asis - Popayán - [29/06/2019]</li>
+            </ul>
+        </section>
+        <section id="Experiencia" class="Separaciones">
+            <header class="Titulo">
+                <h2>Experiencia</h2>
+                <hr>
+            </header>
+            <p>Desarrollo de aplicaciones de escritorio, en c, c++, java y c#.</p>
+            <p>Manejo de bases de datos Oracle - PL/SQL</p>
+        </section>
+        <section id="Referencias" class="Separaciones">
+            <header class="Titulo">
+                <h2>Referencias</h2>
+                <hr>
+            </header>
+            <ul class="datos">
+                <li class="datos-item"> <strong> Anderson Camilo Bonilla </strong>
+                    <ul>
+                        <li class="datos-item"> - Profesión: Ingeniero en Formación</li>
+                        <li class="datos-item"> - Celular: (+57) 314 603 2055</li>
+                        <li class="datos-item"> - Correo: acbonilla@unicauca.edu.co</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="Contacto" class="Separaciones">
+            <header class="Titulo">
+                <h2>Contacto</h2>
+                <hr>
+            </header>
+            <div class="input-group">
+                <span class="input-group-text bg-transparent">Nombre | Apellidos</span>
+                <input type="text" aria-label="First name" class="form-control bg-transparent">
+                <input type="text" aria-label="Last name" class="form-control bg-transparent">
+            </div>
+            <div class="input-group bg-transparent">
+                <span class="input-group-text bg-transparent">Correo</span>
+                <input type="text" aria-label="E-mail" class="form-control bg-transparent">
+            </div>
+            <div class="input-group ">
+                <span class="input-group-text bg-transparent">Teléfono</span>
+                <input type="text" aria-label="Telefono" class="form-control bg-transparent">
+            </div>
+            <button type="button" class="btn btn-secondary">Enviar</button>
+        </section>
+    </main>
+</div>
+    <footer>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>También puedes contactar por:</span>
+            </div>
+            <!-- Left -->
+  
+            <!-- Right -->
+            <div>
+              <a href="https://www.instagram.com/santiago______benitez/"  target="_blank" class="me-4 text-reset">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://github.com/SBenitezL" target="_blank" class="me-4 text-reset">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.youtube.com/@santiagobenitezlopez5650/channels" target="_blank" class="me-4 text-reset">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
 
-        </section>
-    </main> 
+            <!-- Right -->
+          </section>
+    </footer>
 </body>
-</html> 
+</html>
